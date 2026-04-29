@@ -1,0 +1,40 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg:        #0d0d0d;
+  --surface:   #151515;
+  --surface2:  #1c1c1c;
+  --border:    #2a2a2a;
+  --border2:   #383838;
+  --text:      #e8e8e0;
+  --muted:     #5a5a52;
+  --accent:    #c8f135;
+  --red:       #ff3d3d;
+  --amber:     #f5a623;
+  --green:     #3dffa0;
+  --font-display: 'Bebas Neue', sans-serif;
+  --font-mono:    'IBM Plex Mono', monospace;
+  --radius: 3px;
+  --transition: 140ms ease;
+}
+
+html { font-size: 14px; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-mono);
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+button { cursor: pointer; font-family: inherit; }
+input, select { font-family: inherit; }
+
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border2); border-radius: 2px; }
